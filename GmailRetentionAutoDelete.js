@@ -1,6 +1,10 @@
+/*
+Script to autodelete old emails on Gmail
+*/
+
 function deleteOldEmails() {
-  const LABEL_NAME = 'LABED/NESTED';
-  const RETENTION_DAYS = 30;
+  const LABEL_NAME = 'LABED/NESTED'; // change to filtered label
+  const RETENTION_DAYS = 30; // change to desired retention
 
   const label = GmailApp.getUserLabelByName(LABEL_NAME);
 
